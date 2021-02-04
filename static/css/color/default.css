@@ -1,0 +1,140 @@
+::selection {
+  background-color:#09c3b3;
+  color: #fff;
+}
+::-moz-selection {
+  background-color:#09c3b3;
+  color: #fff;
+}
+
+
+header .k-navbar-nav li a.active,
+header .k-navbar-nav li a:hover,
+.theme-color {
+  color:#09c3b3;
+}
+
+.theme-border {
+	border-color: #09c3b3;
+}
+
+.m-btn,
+.theme-after:after,
+.theme-bg {
+  background: #09c3b3;
+}
+
+.theme-ng{
+  
+  font-family: Arial;
+  font-size: 402px;
+  color: rgba(0, 0, 0, 0.185);
+  font-weight: 600;
+  letter-spacing: -40px;
+  background: #c33e09;
+}
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -180px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* Dropdown Button */
+
+.dropbtn {
+  position: relative;
+  
+  margin: auto;
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: top;
+  color: #ececec;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.215em;
+  background: rgb(0, 0, 0);
+  border: none;
+  outline: none !important;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background: rgb(0, 0, 0);
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(116, 115, 115);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.08);}
